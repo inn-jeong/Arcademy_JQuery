@@ -10,26 +10,26 @@
         $(function(){
             //focus/blus: 하위 요소 선택시 이벤트 발생하지 않음
             //focus: 키도드 이벤트지만, 마우스로 찍어도 이벤트 발생됨
-            // $("#use_id_1, #use_pw_1").on("focus",function(){
-            $("#frm_1").on("focus",function(){
+            $("#use_id_1, #use_pw_1").on("focus",function(){
+            // $("#frm_1").on("focus",function(){
                 //this: id,pw가 마우스 탭키가 선택되면 스타일 적용
                 $(this).css({"background-color":"pink"});
             });
-            // $("#use_id_1, #use_pw_1").on("blur",function(){
-            $("#frm_1").on("blur",function(){
+            $("#use_id_1, #use_pw_1").on("blur",function(){
+            // $("#frm_1").on("blur",function(){
                 //this: id,pw가 마우스 탭키가 벗어나면 스타일 적용
                 $(this).css({"background-color":"#fff"});
             });
 
             //focusin/focusout: 하위 요소 선택시 이벤트 발생
             //focus: 키도드 이벤트지만, 마우스로 찍어도 이벤트 발생됨
-            // $("#use_id_2, #use_pw_2").on("focusin",function(){
-            $("#frm_2").on("focusin",function(){
+            $("#use_id_2, #use_pw_2").on("focusin",function(){
+            // $("#frm_2").on("focusin",function(){
                 //this: id,pw가 마우스 탭키가 선택되면 스타일 적용
                 $(this).css({"background-color":"pink"});
             });
-            // $("#use_id_2, #use_pw_2").on("focusout",function(){
-            $("#frm_2").on("focusout",function(){
+            $("#use_id_2, #use_pw_2").on("focusout",function(){
+            // $("#frm_2").on("focusout",function(){
                 //this: id,pw가 마우스 탭키가 벗어나면 스타일 적용
                 $(this).css({"background-color":"#fff"});
             });
